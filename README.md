@@ -2,7 +2,7 @@
 
 ## PocketPics
 Built using React, MaterialUI and FancyBox.
-Reduces the number of tabs used(and thus memory too) by allowing users to paste photos into the web app.
+Reduces the number of tabs used (and thus memory too) by allowing users to paste photos into the web app.
 The images are then neatly displayed using FancyBox and can be removed at any time.
 
 Planned features:
