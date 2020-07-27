@@ -1,8 +1,8 @@
 .preview{
   text-align: center;
+width:350px;
+  height: 215px;
 
-  height: 200px;
-  width: 200px;
 }
 .about{
   position: absolute;
@@ -29,7 +29,8 @@ body{
   background-image: url("https://www.transparenttextures.com/patterns/hoffman.png");
 }
 footer {
-  position: absolute;
+  margin-bottom: 0px;
+  position:absolute;
   text-align: center;
   bottom: 0;
   width: 100%;

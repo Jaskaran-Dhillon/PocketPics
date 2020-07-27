@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "./Card";
 import Footer from "./Footer"
 import Header from "./Header"
+import image from './Placeholder.png'
 
 function SubmitArea(props){
   const [images, setImg] = useState([]);
@@ -26,12 +27,14 @@ function SubmitArea(props){
       if (temp_img==="")
     {
         alert("Blank submissions are not allowed.");
+
         return;
+
     }
     addImg(temp_img);
-      document.getElementById("container").src="";
+      document.getElementById("container").src=image;
       event.preventDefault();
-      temp_img = "";
+
     }
 
     document.onpaste = function(pasteEvent) {
@@ -55,7 +58,7 @@ return(
   <Header />
   <div className="upload">
   <h3>Paste image in box below</h3>
-  <img className ="preview" id="container" alt=""/>
+  <img className ="preview" id="container" src={image} alt=""/>
   </div>
   <div className="upload">
     <button onClick={submit}>Submit</button>
